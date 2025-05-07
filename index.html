@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC Dinos Clone_Copy</title>
+    <link rel="stylesheet" href="https://www.ncdinos.com/assets/js/swiper5.3.8/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://www.ncdinos.com/assets/images/favicon.ico">
+    <script src="https://www.ncdinos.com/assets/js/jquery.min.js"></script>
+    <script src="https://www.ncdinos.com/assets/js/swiper5.3.8/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="index-header">
+        <nav class="top-nav">
+            <ul class="f-wrap">
+                <li><a href="#" style="cursor: pointer;">티켓</a></li>
+                <li><a href="#">팀스토어</a></li>
+                <li><a href="#">POD샵</a></li>
+                <li class="sns-wrap">
+                    <a href="#" style="cursor:pointer">로그인</a>
+                    <a href="#" style="cursor:pointer">회원가입</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-wrap null">
+            <div>
+                <h1 class="logo"><a href="#" class="hidden">NC Dinos</a></h1>
+                <nav class="menu-wrap">
+                    <ul class="menu f-wrap">
+                        <li class="">
+                            <a href="#">다이노스</a>
+                            <ul class="s-menu">
+                                <li class=""><a href="#">구단소개</a></li>
+                                <li class=""><a href="#">구단소식</a></li>
+                                <li class=""><a href="#">구단VI</a></li>
+                                <li class=""><a href="#">구장, 시설안내</a></li>
+                                <li class=""><a href="#">D-NATION</a></li>
+                                <li class=""><a href="#">후원, 제휴</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">스토리</a>
+                            <ul class="s-menu">
+                                <li class=""><a href="#">포토</a></li>
+                                <li class=""><a href="#">영상</a></li>
+                            </ul>
+                        </li>
+                        <li class="name-wrap ">
+                            <a href="#">경기정보</a>
+                            <ul class="s-menu">
+                                <li class="name">정규리그</li>
+                                <li class=""><a href="#">경기일정/결과</a></li>
+                                <li class=""><a href="#">박스 스코어</a></li>
+                                <li class=""><a href="#">게임노트</a></li>
+                                <li class="name">퓨처스</li>
+                                <li class=""><a href="#">경기 일정/결과</a></li>
+                                <li class=""><a href="#">박스 스코어</a></li>
+                            </ul>
+                        </li>
+                        <li class="name-wrap ">
+                            <a href="#">기록실</a>
+                            <ul class="s-menu">
+                                <li class="name">정규리그</li>
+                                <li class=""><a href="#">팀기록</a></li>
+                                <li class="name">퓨처스</li>
+                                <li class=""><a href="#">팀기록</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">선수단</a>
+                            <ul class="s-menu">
+                                <li class=""><a href="#">선수단 전체</a></li>
+                                <li class=""><a href="#">코칭스태프</a></li>
+                                <li class=""><a href="#">트레이너</a></li>
+                                <li class=""><a href="#">투수</a></li>
+                                <li class=""><a href="#">포수</a></li>
+                                <li class=""><a href="#">내야수</a></li>
+                                <li class=""><a href="#">외야수</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">팬</a>
+                            <ul class="s-menu">
+                                <li class=""><a href="#">랠리 다이노스</a></li>
+                                <li class=""><a href="#">다이노스 뮤직</a></li>
+                                <li class=""><a href="#">월페이퍼</a></li>
+                                <li class=""><a href="#">의견보내기</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">주니어 다이노스</a>
+                            <ul class="s-menu">
+                                <li class=""><a href="#">소개</a></li>
+                                <li class=""><a href="#">베이스볼 아카데미</a></li>
+                                <li class=""><a href="#">응원타임</a></li>
+                                <li class=""><a href="#">응원타임 클래스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-banner">
+            <div class="slider" style="background : #061d3d">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank"><img src="./images/main_banner.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank"><img src="./images/main_banner_2.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank"><img src="./images/main_banner_3.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div>
+                <div class="ticket-swiper-wrap">
+                    <div class="empty">
+                        <p>예매 가능한 경기 없습니다.</p>
+                        <span>다음 경기를 기대해 주세요.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="board-box f-wrap">
+                <div class="item f-wrap">
+                    <span class="txt-blue-light">공지사항</span>
+                    <a href="#" class="txt">NC 다이노스, 4월 투&middot;타 MVP 손주환, 손아섭 선정</a>
+                    <span class="date roboto">05-04</span>
+                </div>
+                <div class="item f-wrap">
+                    <span class="txt-mint">이벤트</span>
+                    <a href="#" class="txt">2025시즌 창원NC파크 전광판 기념일 광고 이벤트</a>
+                    <span class="date roboto">03-21</span>
+                </div>
+            </div>
+        </section>
+        <section class="board main-board">
+            <div class="con f-wrap main-notice-new">
+                <div class="tab-board">
+                    <h2>구단소식</h2>
+                    <p>NC 다이노스의 다양한 소식들을 만나보세요</p>
+                    <a href="#" class="more"><span class="ico ico-more">더보기</span></a>
+                    <div class="tabs f-wrap">
+                        <button class="active">전체</button>
+                        <button>공지사항</button>
+                        <button>이벤트</button>
+                    </div>
+                    <div class="tab-container">
+                        <ul class="cont active">
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스, 4월 투&middot;타 MVP 손주환, 손아섭 선정
+                                </a>
+                                <span class="date">2025-05-04</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    작년에 이어 올해도 다시 만난다! 조구만 I NC 다이노스 두 번째 협업 상품 출시
+                                </a>
+                                <span class="date">2025-05-04</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스, 임시 대체 홈구장 검토 착수
+                                </a>
+                                <span class="date">2025-05-02</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스 이재학, 팔꿈치 수술 결정
+                                </a>
+                                <span class="date">2025-04-29</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스, 코칭스태프 보직 변경
+                                </a>
+                                <span class="date">2025-04-28</span>
+                            </li>
+                        </ul>
+                        <ul class="cont">
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스, 4월 투&middot;타 MVP 손주환, 손아섭 선정
+                                </a>
+                                <span class="date">2025-05-04</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    작년에 이어 올해도 다시 만난다! 조구만 I NC 다이노스 두 번째 협업 상품 출시
+                                </a>
+                                <span class="date">2025-05-04</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스, 임시 대체 홈구장 검토 착수
+                                </a>
+                                <span class="date">2025-05-02</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스 이재학, 팔꿈치 수술 결정
+                                </a>
+                                <span class="date">2025-04-29</span>
+                            </li>
+                            <li>
+                                <span class="sort">공지사항</span>
+                                <a href="#" class="tit new">
+                                    NC 다이노스, 코칭스태프 보직 변경
+                                </a>
+                                <span class="date">2025-04-28</span>
+                            </li>
+                        </ul>
+                        <ul class="cont">
+                            <li>
+                                <span class="sort">이벤트</span>
+                                <a href="#" class="tit">
+                                    2025시즌 창원NC파크 전광판 기념일 광고 이벤트
+                                </a>
+                                <span class="date">2025-03-21</span>
+                            </li>
+                            <li>
+                                <span class="sort">이벤트</span>
+                                <a href="#" class="tit">
+                                    가상티켓 예매 이벤트
+                                </a>
+                                <span class="date">2025-01-31</span>
+                            </li>
+                            <li>
+                                <span class="sort">이벤트</span>
+                                <a href="#" class="tit">
+                                    2024 타운홀 미팅 상세 안내
+                                </a>
+                                <span class="date">2024-11-21</span>
+                            </li>
+                            <li>
+                                <span class="sort">이벤트</span>
+                                <a href="#" class="tit">
+                                    10월 엔팍 별다방클래스 안내
+                                </a>
+                                <span class="date">2024-10-18</span>
+                            </li>
+                            <li>
+                                <span class="sort">이벤트</span>
+                                <a href="#" class="tit">
+                                    YOGA IN THE 창원NC파크 안내
+                                </a>
+                                <span class="date">2024-09-25</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="story">
+                    <h3><img src="https://www.ncdinos.com/assets/images/nc_story_txt.png" alt="NC DINOS STORY"></h3>
+                    <p>공룡의 꿈을 향한 NC 다이노스의 발자취와<br>
+                        팬 여러분의 이야기가 함께하는 공간입니다.</p>
+                    <ul class="sns-wrap f-wrap">
+                        <li>
+                            <a href="http://www.youtube.com/user/ncdinos" target="_blank">
+                                <img src="https://www.ncdinos.com/assets/images/ic_story_youtube.png" alt="유투브">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com/ncdinos2011" target="_blank">
+                                <img src="https://www.ncdinos.com/assets/images/ic_story_instagram.png" alt="인스타그램">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ncdinos_futures" target="_blank">
+                                <img src="https://www.ncdinos.com/assets/images/ic_story_futures.svg" alt="퓨쳐스">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.facebook.com/ncdinos" target="_blank">
+                                <img src="https://www.ncdinos.com/assets/images/ic_story_facebook.png" alt="페이스북">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/ncdinos_fan" target="_blank">
+                                <img src="https://www.ncdinos.com/assets/images/ic_story_twitter.png" alt="트위터">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="tv">
+            <div class="con">
+                <h2>다이노스 영상</h2>
+                <p>NC 다이노스의 업로드 영상을 확인하세요!</p>
+                <div class="f-wrap">
+                    <div class="gall video-gall">
+                        <a href="#" class="img new">
+                            <div class="ab-box">
+                                <span class="date">2025-05-06</span>
+                                <strong class="title">
+                                    어린이날의 주인공! NC & KT 어린이의 애국가 제창 #ncd...
+                                </strong>
+                            </div>
+                            <span class="img-wrap">
+                                <img src="https://i.ytimg.com/vi/5O29SOrEy6k/sddefault.jpg" alt="" style="width: 100%;">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="gall style2">
+                        <div>
+                            <a href="#" class="img">
+                                <img src="https://i.ytimg.com/vi/5vLY1gyiT_Y/sddefault.jpg" alt="">
+                            </a>
+                            <a href="#" class="txt">
+                                <strong class="title">
+                                    선취점+홈런 = 완벽, 연타석 타점쇼를 펼쳐주는 형준! #ncdinos ...
+                                </strong>
+                                <span class="date">2025-05-06</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="img">
+                                <img src="https://i.ytimg.com/vi/YO0zcXM7fMk/sddefault.jpg" alt="">
+                            </a>
+                            <a href="#" class="txt">
+                                <strong class="title">
+                                    [ ] 5월 6일 NC vs KT
+                                </strong>
+                                <span class="date">2025-05-06</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="img">
+                                <img src="https://i.ytimg.com/vi/Ly17YsSEsR0/sddefault.jpg" alt="">
+                            </a>
+                            <a href="#" class="txt">
+                                <strong class="title">
+                                    4연승을 확신으로 타점, 득점 다 한 9회 초 캡틴 #ncdinos #...
+                                </strong>
+                                <span class="date">2025-05-06</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="more"><span class="ico ico-more">더보기</span></a>
+            </div>
+        </section>
+        <section class="news">
+            <div class="con">
+                <h2>다이노스 포토</h2>
+                <a href="#" class="more"><span class="ico ico-more">더보기</span></a>
+                <div class="slider">
+                    <div class="gall">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 6 - 3 KT (2025. 5. 6. 수원 KT위즈파크)
+                                    </strong>
+                                    <span class="date">2025-05-06</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_2.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 6 - 2 KT (2025. 5. 5. 수원 KT위즈파크)
+                                    </strong>
+                                    <span class="date">2025-05-05</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_3.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 9 - 6 롯데 (2025. 5. 4. 부산 사직야구장)
+                                    </strong>
+                                    <span class="date">2025-05-04</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_4.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 13 - 4 롯데 (2025. 5. 3. 부산 사직야구장)
+                                    </strong>
+                                    <span class="date">2025-05-03</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_5.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 3 - 4 롯데 (2025. 5. 2. 부산 사직야구장)
+                                    </strong>
+                                    <span class="date">2025-05-02</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_6.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 7 - 0 기아 (2025. 4. 30. 광주 기아챔피언스필드)
+                                    </strong>
+                                    <span class="date">2025-04-30</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_7.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 3 - 13 기아 (2025. 4. 29. 광주 기아챔피언스필드)
+                                    </strong>
+                                    <span class="date">2025-04-29</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="img">
+                                    <img src="./images/photo_slide_8.jpg" alt="">
+                                </a>
+                                <a href="#" class="txt">
+                                    <strong class="title">
+                                        [사진첩] 2025 정규시즌 NC 4 - 8 삼성 (2025. 4. 27. 대구 삼성라이온즈파크)
+                                    </strong>
+                                    <span class="date">2025-04-27</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="ico ico-next"></div>
+                    <div class="ico ico-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="last">
+            <div class="con f-wrap" style="text-align: center;">
+                <ul class="main-bottom-banner-wrap">
+                    <li>
+                        <a href="#">
+                            <strong>D-NATION</strong>
+                            <span class="txt">
+                                NC 다이노스는 지역사회에 대한<br>지속가능한 기여를 실천합니다.
+                            </span>
+                            <span class="ico ico-people"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>다이노스 월페이퍼</strong>
+                            <span class="txt"> NC 다이노스의 주요 일정을<br>바탕 화면으로 만나보세요. </span>
+                            <span class="ico ico-computer"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="index-header">
+        <a href="#" style="position: fixed; bottom: 60px; right: 60px; z-index: 999;">
+            <img src="https://www.ncdinos.com/assets/images/btn_won_chatbot@3x.png" style="width: 8rem; height: 8rem;">
+        </a>
+        <div class="partner">
+            <div class="slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_01_2024.jpg" alt="NC">
+                    </a>
+                    <a href="https://banking.nonghyup.com/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_02.jpg" alt="NH bank">
+                    </a>
+                    <a href="http://www.pkpork.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_03.jpg" alt="부경양돈농협">
+                    </a>
+                    <a href="http://brand.pkpork.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_04.jpg" alt="포크밸리">
+                    </a>
+                    <a href="https://www.hitejinro.com/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_16.jpg" alt="켈리">
+                    </a>
+                    <a href="https://www.knbank.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_06.jpg" alt="BNK 경남은행">
+                    </a>
+                    <a href="https://www.abllife.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_07.jpg" alt="ABL">
+                    </a>
+                    <a href="https://www.muhak.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_14.jpg" alt="무학">
+                    </a>
+                    <a href="https://www.tving.com/onboarding" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/png/partner_tving.png" alt="티빙">
+                    </a>
+                    <a href="https://www.tongyeong.go.kr/main.web" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/png/partner_tongyeong.png" alt="통영시">
+                    </a>
+                    <a href="https://smartstore.naver.com/busanmilk" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/png/partner_busanMilk.png" alt="부산우유">
+                    </a>
+                    <a href="http://www.camc.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_11.jpg" alt="청아병원">
+                    </a>
+                    <a href="http://www.muruphospital.com/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_13.jpg" alt="무룹병원">
+                    </a>
+                    <a href="https://www.hahahospital.co.kr/" class="swiper-slide" target="_blank">
+                        <img src="https://www.ncdinos.com/partner/png/partner_haha.png" alt="365하하병원">
+                    </a>
+                </div>
+                <!-- Add Arrows -->
+                <div class="ico ico-next"></div>
+                <div class="ico ico-prev"></div>
+            </div>
+        </div>
+        <div class="f-wrap">
+            <h1 class="f-logo"><img src="https://www.ncdinos.com/assets/images/f_logo.png" alt="nc dinos"></h1>
+            <div class="privacy"><a href="#" style="font-size:1.1em;">개인정보처리방침</a></div>
+            <div class="info-wrap">
+                <ul class="f-menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <p class="copy">
+                    Copyright 2024 &copy; NC Dinos Baseball Club. All Right Reserved.
+                </p>
+                <ul class="sns-wrap">
+                    <li><a href="http://www.youtube.com/user/ncdinos" target="_blank"><span
+                                class="ico ico-youtube">유투브</span></a></li>
+                    <li><a href="http://www.instagram.com/ncdinos2011" target="_blank"><span
+                                class="ico ico-insta">인스타그램</span></a></li>
+                    <li><a href="http://www.facebook.com/ncdinos" target="_blank"><span
+                                class="ico ico-facebook">페이스북</span></a></li>
+                    <li><a href="https://twitter.com/ncdinos_fan" target="_blank"><span
+                                class="ico ico-twitter">트위터</span></a></li>
+                </ul>
+            </div>
+            <div class="family">
+                <a href="http://www.ncsoft.com" target="_blank"> <img
+                        src="https://www.ncdinos.com/assets/images/logo_footer_nc_2024.png" alt="NC"></a>
+                <a href="http://www.plaync.co.kr" target="_blank"><img
+                        src="https://www.ncdinos.com/assets/images/logo_footer_plaync_2024.png" alt="PLAY NC"></a>
+            </div>
+            <span class="p-txt">이 홈페이지는 문화체육관광부와 국민체육진흥공단의 재정후원으로 제작되었습니다.</span>
+        </div>
+    </footer>
+</body>
+</html>
