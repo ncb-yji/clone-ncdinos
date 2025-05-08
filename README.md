@@ -1,7 +1,7 @@
 ## **Clone of NC Dinos official website**
 
-이 프로젝트는 NC 다이노스 공식 홈페이지([https://www.ncdinos.com/](https://www.ncdinos.com/))의 메인 페이지를 HTML, CSS, JavaScript로 클론한 작업입니다.   
-실제 웹사이트 구조 분석 및 재구성 연습하고, 웹폰트 적용 및 CORS 이슈 해결을 경험했습니다.
+이 프로젝트는 NC 다이노스 공식 홈페이지([https://www.ncdinos.com/](https://www.ncdinos.com/))의 메인 페이지를 HTML, CSS, JavaScript로 클론한 작업입니다. 
+실제 웹사이트 구조 분석 및 재구성 연습하고, 웹폰트 적용 및 CORS 이슈 해결을 경험했습니다. 
 또한 실제 웹사이트의 구조를 분석하면서 발견한 버그를 해결하고, 웹페이지의 아쉬운 점들을 개선해봤습니다.
 
 ### **원본 페이지의 버그 수정**
