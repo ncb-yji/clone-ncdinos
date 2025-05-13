@@ -1,0 +1,828 @@
+/* CSS 파일의 문자 인코딩 : UTF-8 */
+@charset "UTF-8";
+/* 웹으로부터 폰트 가져오기 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* 기본태그의 공통사항 정의 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none; }
+
+img {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0; }
+
+
+/* 폰트 */
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 200;
+  src: url('../assets/fonts/NotoSans-Light-39bc3dc0347163b6ddda1d24b334371e.eot');
+  src: url('../assets/fonts/NotoSans-Light-39bc3dc0347163b6ddda1d24b334371e.eot') format("embedded-opentype"), url('../assets/fonts/NotoSans-Light-d04dd8702c5cc108a75e99f43ba7fcbb.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 300;
+  src: url('../assets/fonts/NotoSans-DemiLight-53abcd80ce413970f785275539cc3dab.eot');
+  src: url('../assets/fonts/NotoSans-DemiLight-53abcd80ce413970f785275539cc3dab.eot') format("embedded-opentype"), url('../assets/fonts/NotoSans-DemiLight-0cebeac099c6b89e86bdc5a41622181a.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 400;
+  src: url('../assets/fonts/NotoSans-Regular-0589d1a2545498ab34da041416b4a3a9.eot');
+  src: url('../assets/fonts/NotoSans-Regular-0589d1a2545498ab34da041416b4a3a9.eot') format("embedded-opentype"), url('../assets/fonts/NotoSans-Regular-53e1309e4fc9372afba4fd8f872a7aa5.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 500;
+  src: url('../assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot');
+  src: url('../assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot') format("embedded-opentype"), url('../assets/fonts/NotoSans-Medium-024dc32a28bc99fe1a3e5f7628989a65.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 600;
+  src: url('../assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot');
+  src: url('../assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot') format("embedded-opentype"), url('../assets/fonts/NotoSans-Medium-024dc32a28bc99fe1a3e5f7628989a65.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 700;
+  src: url('../assets/fonts/NotoSans-Bold-160e617ab431e6e945fe8186a2e63bb0.eot');
+  src: url('../assets/fonts/NotoSans-Bold-160e617ab431e6e945fe8186a2e63bb0.eot') format("embedded-opentype"), url('../assets/fonts/NotoSans-Bold-a123e4ed0d51aa4487d91274a452a981.woff') format("woff"); }
+
+  /* 폰트색 */
+.txt-blue-light {
+  color: #5b8ebd; }
+
+.txt-mint {
+  color: #48d4d3; }
+
+/* 기본태그의 공통사항 정의2 */
+html {
+  width: 100%;
+  min-width: 71.4285714286rem;
+  font-family: 'NotoSansKR', Arial, sans-serif;
+  font-size: 14px;
+  color: #121212;
+  line-height: 1; }
+  html body {
+    width: 100%; }
+  html .roboto {
+    font-family: 'Roboto','NotoSansKR',sans-serif; }
+
+button {
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+.hidden {
+  text-indent: -9999px;
+  overflow: hidden;
+  font-size: 0;
+  width: 0;
+  height: 0; }
+
+.f-wrap:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+/* 슬라이더 관련 CSS Start */
+.slider, .slider2 {
+  position: relative;
+  overflow: hidden; }
+  .slider .ico-next, .slider2 .ico-next {
+    cursor: pointer;
+    right: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .ico-prev, .slider2 .ico-prev {
+    cursor: pointer;
+    left: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .swiper-pagination-bullet, .slider2 .swiper-pagination-bullet {
+    width: 0.8571428571rem;
+    height: 0.8571428571rem;
+    background: #1e457c;
+    margin: 0 0.3571428571rem !important;
+    outline: none; }
+  .slider .swiper-pagination, .slider2 .swiper-pagination {
+    position: static;
+    padding-top: 2.1428571429rem; }
+/* 슬라이더 관련 CSS End */
+
+/* '다이노스 영상' 및 '다이노스 포토' 관련 CSS Start */
+.gall .img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 10.1428571429rem;
+  background: #efefef;
+  overflow: hidden; }
+  .gall .img img {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+.gall .txt {
+  display: block;
+  box-sizing: border-box;
+  padding: 1.0714285714rem 0.9285714286rem 1.7857142857rem; }
+.gall .title {
+  box-sizing: border-box;
+  height: 5.6rem;
+  overflow-y: hidden;
+  display: block;
+  line-height: 1.6;
+  font-size: 0.9285714286rem;
+  color: #222;
+  word-break: keep-all;
+  padding-bottom: 1.1428571429rem;
+  font-weight: 500; }
+.gall .date {
+  font-size: 0.8571428571rem;
+  color: #646464; }
+.gall.style2 > div {
+  margin-bottom: 1.4285714286rem; }
+  .gall.style2 > div:after {
+    content: '';
+    clear: both;
+    display: block; }
+  .gall.style2 > div:last-of-type {
+    margin-bottom: 0; }
+.gall.style2 .img {
+  float: left;
+  width: 15.7142857143rem;
+  height: 8.8rem; }
+.gall.style2 .txt {
+  float: left;
+  width: calc(100% - 15.7142857143rem);
+  padding: 0 0 0 0.7142857143rem; }
+.gall.style2 .title {
+  font-size: 1.1428571429rem;
+  padding: 0.9285714286rem 0; }
+.gall.style2 .date {
+  opacity: .4;
+  color: rgba(18, 18, 18, 0.4); }
+
+.video-gall {
+  position: relative; }
+  .video-gall .img {
+    width: 100%;
+    height: 100%;
+    background: #aaa; }
+  .video-gall .ab-box {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 3.1428571429rem 2.9285714286rem; }
+  .video-gall .title {
+    color: #fff;
+    font-size: 1.8571428571rem;
+    font-weight: 700; }
+  .video-gall .date {
+    color: rgba(215, 216, 210, 0.4);
+    font-size: 0.8571428571rem; }
+  .video-gall:after {
+    content: '';
+    position: absolute;
+    right: -1.4285714286rem;
+    top: 0;
+    width: 0.1428571429rem;
+    height: 100%;
+    background: #1d477b;
+    opacity: .15; }
+/* '다이노스 영상' 및 '다이노스 포토' 관련 CSS End */
+
+/* '구단소식' 관련 CSS Start */
+.tab-board .tabs {
+  border-bottom: 0.0714285714rem solid #dbdbdb; }
+  .tab-board .tabs button {
+    display: block;
+    float: left;
+    min-width: 7.3571428571rem;
+    text-align: center;
+    line-height: 2.8571428571rem;
+    background: #f3f3f3;
+    font-size: 1.1428571429rem;
+    color: rgba(7, 29, 61, 0.49);
+    margin-bottom: -0.0714285714rem;
+    border-bottom: 0.0714285714rem solid #dbdbdb;
+    border-top: 0.0714285714rem solid transparent;
+    position: relative; }
+    .tab-board .tabs button:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0.0714285714rem;
+      height: 100%;
+      background: #dbdbdb;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    .tab-board .tabs button:last-of-type:after {
+      display: none; }
+    .tab-board .tabs button:after {
+      height: 1.1428571429rem; }
+    .tab-board .tabs button.active {
+      background: #fff;
+      color: #071d3d;
+      border: 0.0714285714rem solid #c8c8c8;
+      border-bottom-color: #fff;
+      font-weight: 700;
+      margin-left: -0.0714285714rem; }
+      .tab-board .tabs button.active:after {
+        display: none; }
+.tab-board .tab-container li {
+  border-bottom: 0.0714285714rem solid #dbdbdb;
+display: flex; align-items: center; column-gap: 12px;
+}
+.tab-board .tab-container .sort {
+  font-size: 0.8571428571rem;
+  color: #1d477b;
+  line-height: 4.2857142857rem;
+  width: 46px;
+  text-align: center; }
+.tab-board .tab-container .tit {
+  color: #222;
+  font-weight: 500;
+  line-height: 1.4; word-break: keep-all;
+  overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; flex: 1;}
+.tab-board .tab-container .date {
+  color: #747474;
+  font-size: 0.8571428571rem;
+  width: 62px; text-align: right;}
+  .tab-board .tab-container .tit.new::before {
+    content: 'N';
+    width: 1.1428571429rem;
+    height: 1.1428571429rem;
+    color: #fff;
+    line-height: 1.1428571429rem;
+    font-weight: 700;
+    font-size: 0.7142857143rem;
+    border-radius: 0.2857142857rem;
+    margin-right: 6px;
+    background: #ee2529;
+    display: inline-flex; align-items: center; justify-content: center;}
+.tab-container .cont, .tab-container .cont2 {
+  display: none; }
+  .tab-container .cont.active, .tab-container .cont2.active {
+    display: block; }
+/* '구단소식' 관련 CSS End */
+
+/* 페이지 전반에 사용되는 아이콘들 */
+.ico {
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  background-size: 100%; }
+  .ico.ico-twitter {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_twitter-3fb1dc5d3ed18f2d509dda3e192bae34.png"); }
+  .ico.ico-facebook {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_facebook-ab4f6055ed3995c8c34ee8952124f7b8.png"); }
+  .ico.ico-insta {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_insta-b12c7b2eb5bfd032400a032d4047cfc9.png"); }
+  .ico.ico-youtube {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_youtube-9da84a9a6c84fcbccd6eca07d690afaf.png"); }
+  .ico.ico-more {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_more-b159ffb3fda5683a5593fbbe8b5cde85.png"); }
+  .ico.ico-next {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_next-26e5df3256448909aeeb286bd6f9e63c.png"); }
+  .ico.ico-prev {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_prev-7e46cff3654a4e6f76618a8f6beff667.png"); }
+  .ico.ico-people {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_people-4fa5afc0a613c8b39db2d429a65d4312.png"); }
+  .ico.ico-computer {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_computer-ab3fa1b849435cec39033b3c438c6192.png"); }
+  .ico.ico-more {
+    width: 2.1428571429rem;
+    height: 2.1428571429rem; }
+  .ico.ico-next, .ico.ico-prev {
+    width: 0.7142857143rem;
+    height: 1.2857142857rem;
+    background-size: 0.7142857143rem; }
+  .ico.ico-people, .ico.ico-faq, .ico.ico-computer {
+    width: 6.4285714286rem;
+    height: 6.4285714286rem; }
+
+/* Header CSS Start */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 100;
+  box-shadow: 0px 0.7142857143rem 1.4285714286rem 0 rgba(15, 16, 16, 0.3); }
+  header .top-nav {
+    background: #04152b; }
+    header .top-nav > ul {
+      width: 71.4285714286rem;
+      margin: 0 auto;
+      position: relative; }
+    header .top-nav li {
+      float: left;
+      margin-right: 1.4285714286rem;
+      min-width: 4.2857142857rem;
+      text-align: center; }
+      header .top-nav li > a {
+        display: block;
+        padding: 0 0.8571428571rem;
+        line-height: 2.5714285714rem;
+        font-size: 0.8571428571rem; }
+      header .top-nav li.sns-wrap {
+        position: absolute;
+        right: 0;
+        top: 0.4285714286rem;
+        margin: 0; }
+        header .top-nav li.sns-wrap a {
+          display: inline-block;
+          background: #071d3d;
+          border-radius: 100%;
+          width: 4rem;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          text-align: center;
+          margin-right: 1rem;
+          padding: 0; }
+
+.header-wrap {
+  position: relative;
+  background: transparent;
+  text-align: center;
+  background: #071d3d; }
+  .header-wrap > div {
+    width: 71.4285714286rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .header-wrap .logo > a {
+    display: block;
+    width: 8.5714285714rem;
+    height: 3.0714285714rem;
+    margin: 1.821rem 0;
+    background: url(https://www.ncdinos.com/assets/images/logo-89b7b3780358b9ebce0ce8b015097d41.png) no-repeat center center;
+    background-size: 100%; }
+    .header-wrap .menu-wrap .menu {
+      display: flex; align-items: center; justify-content: flex-end;
+    }
+  .header-wrap .menu-wrap .menu > li {
+    position: relative;
+    width: 110px;
+    box-sizing: border-box;
+    padding: 0; }
+    .header-wrap .menu-wrap .menu > li > a {
+      display: block;
+      font-size: 1.1428571429rem;
+      font-weight: 500;
+      padding: 3.071rem 0 2.5rem; }
+    .header-wrap .menu-wrap .menu > li:last-child .s-menu {
+      border-right: 0.0714285714rem solid rgba(255, 255, 255, 0.1); }
+  .header-wrap .menu-wrap .s-menu {
+    display: none;
+    position: absolute;
+    top: 6.5714285714rem;
+    left: 0;
+    width: 100%;
+    height: 23.7142857143rem;
+    padding: 1.1428571429rem 1.0714285714rem;
+    line-height: 1.4;
+    box-sizing: border-box;
+    border-left: 0.0714285714rem solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    z-index: 100; }
+    .header-wrap .menu-wrap .s-menu li {
+      padding: 0.6428571429rem 0;
+      font-size: 0.8571428571rem;
+      font-weight: 400;
+      color: #fff;
+      word-break: keep-all; }
+      .header-wrap .menu-wrap .s-menu li.name {
+        color: #5b8ebd; }
+    .header-wrap .menu-wrap .s-menu a:hover, .header-wrap .menu-wrap .s-menu a:focus, .header-wrap .menu-wrap .s-menu .on a {
+      color: #c7a079;
+      font-weight: 500; }
+  .header-wrap:after {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 23.5714285714rem;
+    position: absolute;
+    left: 0;
+    top: 6.7142857143rem;
+    box-shadow: 0 0 3.2142857143rem 0.3571428571rem rgba(15, 16, 16, 0.15);
+    background: #071d3d;
+    z-index: 10;
+    border-top: 0.0714285714rem solid #c7a079;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+  .header-wrap.hover:after {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+  .header-wrap.hover .s-menu {
+    display: block; }
+/* Header CSS End */
+
+/* Footer CSS Start */
+footer {
+  width: 100%;
+  background: #071d3d;
+  color: #fff; }
+  footer .partner {
+    width: 100%;
+    background: #fff;
+    padding: 0.5714285714rem 0;
+    border-top: 0.0714285714rem solid #dbdbdb; }
+    footer .partner .slider {
+      width: 71.4285714286rem;
+      margin: 0 auto;
+      overflow: hidden; }
+    footer .partner .swiper-slide {
+      display: block;
+      text-align: center; }
+  footer > .f-wrap {
+    position: relative;
+    padding: 4.3571428571rem 0 4.6428571429rem;
+    width: 71.4285714286rem;
+    margin: 0 auto; }
+  footer .f-logo {
+    float: left;
+    margin-right: 2.2142857143rem; }
+  footer .info-wrap {
+    float: left;
+    font-size: 0.7142857143rem;
+    font-weight: 700; }
+    footer .info-wrap .f-menu li {
+      display: inline-block;
+      padding: 0 .571rem 0 .286rem;
+      position: relative; }
+      footer .info-wrap .f-menu li:nth-of-type(1) {
+        padding-left: 0; }
+      footer .info-wrap .f-menu li:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.0714285714rem;
+        height: 100%;
+        background: #dbdbdb;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%); }
+      footer .info-wrap .f-menu li:last-of-type:after {
+        display: none; }
+    footer .info-wrap .copy {
+      color: rgba(255,255,255,0.5);
+      padding-top: 1.429rem;
+      font-weight: initial;}
+    footer .info-wrap .sns-wrap {
+      margin-top: 2.143rem; }
+      footer .info-wrap .sns-wrap li {
+        display: inline-block;
+        margin-right: 1.0714285714rem; }
+        footer .info-wrap .sns-wrap li span {
+          display: block;
+          width: 2.1428571429rem;
+          height: 2.1428571429rem; }
+  footer .family {
+    float: right;
+    padding-top: 2.1428571429rem; }
+    footer .family > a {
+      display: inline-block;
+      padding-left: 2.1428571429rem; }
+  footer .p-txt {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 5rem;
+    font-size: 0.7142857143rem;
+    font-weight: 200;
+    opacity: .2; }
+/* Footer CSS End */
+
+/* Main CSS Start */
+main {
+  padding-top: 9.2857142857rem;
+}
+  main .con {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;}
+    main .con .more {
+      position: absolute;
+      right: 0;
+      top: 6.4285714286rem; }
+  main h2 {
+    display: inline-block;
+    color: #071d3d;
+    font-weight: 900;
+    font-size: 1.7142857143rem;
+    padding: 6.4285714286rem 0 0; }
+    main h2 + p {
+      display: inline-block;
+      color: rgba(7, 29, 61, 0.7);
+      font-size: 1.1428571429rem;
+      padding-left: 0.9285714286rem; }
+  main .main-banner {
+    position: relative;
+    width: 100%;
+    background-size: auto 100%;
+    color: #fff; }
+    main .main-banner:before {
+      content: '';
+      width: 0.0714285714rem;
+      height: 2.1428571429rem;
+      background: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0%);
+      -moz-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+      bottom: -3.5001428571rem;
+      z-index: 6; }
+    main .main-banner:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4.643rem;
+      width: 100%;
+      height: 4.6428571429rem;
+      background: #0c2444;
+      z-index: 5; }
+    main .main-banner .slider {
+      position: relative;
+      height: 430px;
+      text-align: center;
+      margin: 0 auto; }
+main .main-banner .slider img {
+  height: 430px;
+  max-width: initial;
+  margin: 0 auto;
+  position: absolute; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);
+}
+      main .main-banner .slider .swiper-pagination {
+        position: absolute;
+        bottom: 1.25rem; }
+      main .main-banner .slider .swiper-pagination-bullet {
+        background: #fff; }
+    main .main-banner .board-box {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0%);
+      -moz-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+      width: 71.4285714286rem;
+      bottom: -4.643rem;
+      z-index: 10; }
+      main .main-banner .board-box > .item {
+        position: relative;
+        float: left;
+        width: 50%;
+        padding: 1.8571428571rem 1.8571428571rem 1.8571428571rem 0;
+        height: 4.6428571429rem;
+        box-sizing: border-box; }
+        main .main-banner .board-box > .item + .item {
+          padding: 1.8571428571rem 0 1.8571428571rem 1.8571428571rem; }
+      main .main-banner .board-box [class*="txt-"] {
+        font-weight: 500;
+        float: left;
+        display: block; }
+      main .main-banner .board-box .txt {
+        padding: 0 2.1428571429rem;
+        font-weight: 500;
+        color: #fff;
+        font-size: 1rem;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 1.2em;
+        display: inline-block;
+        width: 27.7142857143rem;
+        height: 1.2em; }
+      main .main-banner .board-box .date {
+        font-size: 0.8571428571rem;
+        line-height: 1rem;
+        color: #ebebeb;
+        font-weight: 300;
+        float: right;
+        display: block; }
+  main .news .con {
+    padding-bottom: 8.5714285714rem; }
+  main .news .slider {
+    padding: 2.8571428571rem 2.4285714286rem 0; }
+  main .news .gall {
+    overflow: hidden; }
+    main .news .gall .swiper-slide {
+      border: 0.0714285714rem solid #c8c8c8;
+      box-sizing: border-box; }
+    main .news .gall .img {
+      display: block; }
+    main .news .gall .title {
+      min-height: 4.2857142857rem; }
+  main .tv {
+    background: #eef3f8; }
+    main .tv .con > .f-wrap {
+      padding: 3.5714285714rem 0 5.9285714286rem; }
+    main .tv .video-gall {
+      float: left;
+      width: 42.1428571429rem;
+      max-width: calc(50% - 0.7142857143rem); }
+      main .tv .video-gall > a {
+        display: block;
+        background: transparent; }
+        main .tv .video-gall > a .img-wrap {
+          display: block;
+          width: 100%;
+          height: 19.7rem;
+          position: relative;
+          overflow: hidden; }
+        main .tv .video-gall > a .ab-box {
+          position: static;
+          padding: 0; }
+          main .tv .video-gall > a .ab-box .date {
+            color: #ccc;
+            font-size: 1.1428571429rem; }
+          main .tv .video-gall > a .ab-box .title {
+            color: #121212;
+            font-weight: 500;
+            padding: 5px 0 1.4285714286rem;
+            font-size: 1.7142857143rem; }
+        main .tv .video-gall > a.new .date:after {
+          content: 'N';
+          position: relative;
+          right: -0.3571428571rem;
+          top: 0.1428571429rem;
+          display: inline-block;
+          width: 1.1428571429rem;
+          height: 1.1428571429rem;
+          color: #fff;
+          line-height: 1.1428571429rem;
+          font-weight: 700;
+          font-size: 0.7142857143rem;
+          background: #ee2529;
+          text-align: center;
+          vertical-align: top;
+          border-radius: 0.2857142857rem; }
+      main .tv .video-gall + .gall {
+        float: right;
+        width: calc(50% - 2.1428571429rem); }
+        main .tv .video-gall + .gall > div {
+          margin-bottom: 0.4285714286rem; }
+          main .tv .video-gall + .gall > div .title {
+            padding-top: 1.2857142857rem; }
+  main .board {
+    margin-top: 13.214rem;}
+    main .board h2 {
+      padding-top: 0; }
+    main .board .more {
+      top: 0; }
+    main .board .tab-board {
+      position: relative;}
+    main .board .tabs {
+      margin-top: 50px; }
+    main .board .story {
+      position: relative;
+      background: #003067 url(https://www.ncdinos.com/assets/images/story_bg-b795abcaaeaf5173ade9b96b7f6aae03.png) no-repeat 20.7142857143rem 9.2857142857rem;
+      background-position: bottom -36px right -40px;
+      height: 305Px;
+      box-sizing: border-box;
+      padding: 60px 30px;
+      color: #888888;
+      font-size: 16px;
+      font-weight: 500; }
+
+      main .board .story:after {
+        content: '';
+        position: absolute;
+        right: 24px;
+        top: -130px;
+        width: 172Px;
+        height: 185px;
+        background: url(https://www.ncdinos.com/assets/images/sub/mascots01-661b97ff52e0f5c9453cf60640640d33.png) no-repeat center center;
+        background-size: contain;
+        z-index: -1; }
+      main .board .story p {
+        line-height: 1.4;
+        padding: 24px 0 32px; }
+      main .board .story .sns-wrap {display: flex; align-items: center; justify-content: space-between;}
+      main .board .story .sns-wrap img {width: 56px; height: 56px;}
+  main .last > .f-wrap {
+    padding: 0 0 8.5714285714rem; }
+/* Main CSS End */
+
+/* 하단 배너 (D-NATION, 다이노스 월페이퍼) */
+.main-bottom-banner-wrap {display: flex; column-gap: 20px; justify-content: center;}
+.main-bottom-banner-wrap li {width: calc((100% - 40px) / 3); min-height: 170px;}
+.main-bottom-banner-wrap li a {position: relative; height: 100%; padding: 0 30px; background-color: #eef3f8; box-sizing: border-box; display: flex; flex-flow: column; row-gap: 20px; align-items: start; justify-content: center;}
+.main-bottom-banner-wrap li a strong {font-size: 22px; font-weight: 700; color: #003067;}
+.main-bottom-banner-wrap li a .txt {font-size: 14px; line-height: 1.4; color: #919190;}
+.main-bottom-banner-wrap li a .ico {position: absolute; bottom: 30px; right: 15px;}
+
+/* 경기 및 티켓 상황 (예매 가능한 경기가 있으면 표시되는 듯) */
+.ticket-swiper-wrap {height: 90px; display: flex; align-items: center; justify-content: center; background-color: #0C2444; border-bottom: 1px solid rgba(217,217,217,0.2); position: relative;}
+.ticket-swiper-wrap * {box-sizing: border-box;}
+.ticket-swiper-wrap .empty {display: flex; align-items: center; flex-flow: column; justify-content: center; row-gap: 8px;}
+.ticket-swiper-wrap .empty > p {font-size: 14px; font-weight: 700; color: #ffffff;}
+.ticket-swiper-wrap .empty > span {font-size: 12px; font-weight: 500; color: rgba(255, 255, 255, 0.7);}
+.swiper-button-disabled {opacity: 0; cursor: default;}
+
+/* 구단소식 */
+.main-notice-new {display: flex; align-items: flex-end; column-gap: 24px; justify-content: space-between;}
+.main-notice-new::after {content: none;}
+.main-notice-new .tab-board {width: calc(100% - 24px - 420px);}
+.main-notice-new .story {width: 420px;}
+
+/* '개인정보처리방침' 버튼 */
+.privacy {
+  position: absolute;
+  top: 4.3571428571rem;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+}

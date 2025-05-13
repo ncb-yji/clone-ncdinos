@@ -1,0 +1,233 @@
+/* CSS 파일의 문자 인코딩 : UTF-8 */
+@charset "UTF-8";
+/* 웹으로부터 폰트 가져오기 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* 기본태그의 공통사항 정의 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none; }
+
+img {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0; }
+
+/* 폰트 */
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 200;
+  src: url('./assets/fonts/NotoSans-Light-39bc3dc0347163b6ddda1d24b334371e.eot');
+  src: url('./assets/fonts/NotoSans-Light-39bc3dc0347163b6ddda1d24b334371e.eot') format("embedded-opentype"), url('./assets/fonts/NotoSans-Light-d04dd8702c5cc108a75e99f43ba7fcbb.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 300;
+  src: url('./assets/fonts/NotoSans-DemiLight-53abcd80ce413970f785275539cc3dab.eot');
+  src: url('./assets/fonts/NotoSans-DemiLight-53abcd80ce413970f785275539cc3dab.eot') format("embedded-opentype"), url('./assets/fonts/NotoSans-DemiLight-0cebeac099c6b89e86bdc5a41622181a.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 400;
+  src: url('./assets/fonts/NotoSans-Regular-0589d1a2545498ab34da041416b4a3a9.eot');
+  src: url('./assets/fonts/NotoSans-Regular-0589d1a2545498ab34da041416b4a3a9.eot') format("embedded-opentype"), url('./assets/fonts/NotoSans-Regular-53e1309e4fc9372afba4fd8f872a7aa5.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 500;
+  src: url('./assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot');
+  src: url('./assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot') format("embedded-opentype"), url('./assets/fonts/NotoSans-Medium-024dc32a28bc99fe1a3e5f7628989a65.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 600;
+  src: url('./assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot');
+  src: url('./assets/fonts/NotoSans-Medium-57efe8cefcd18f317aee1a426c22d08f.eot') format("embedded-opentype"), url('./assets/fonts/NotoSans-Medium-024dc32a28bc99fe1a3e5f7628989a65.woff') format("woff"); }
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 700;
+  src: url('./assets/fonts/NotoSans-Bold-160e617ab431e6e945fe8186a2e63bb0.eot');
+  src: url('./assets/fonts/NotoSans-Bold-160e617ab431e6e945fe8186a2e63bb0.eot') format("embedded-opentype"), url('./assets/fonts/NotoSans-Bold-a123e4ed0d51aa4487d91274a452a981.woff') format("woff"); }
+
+  /* 폰트색 */
+.txt-blue-light {
+  color: #5b8ebd; }
+
+.txt-mint {
+  color: #48d4d3; }
+
+/* 기본태그의 공통사항 정의2 */
+html {
+  width: 100%;
+  min-width: 71.4285714286rem;
+  font-family: 'NotoSansKR', Arial, sans-serif;
+  font-size: 14px;
+  color: #121212;
+  line-height: 1; }
+  html body {
+    width: 100%; }
+  html .roboto {
+    font-family: 'Roboto','NotoSansKR',sans-serif; }
+
+button {
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+.hidden {
+  text-indent: -9999px;
+  overflow: hidden;
+  font-size: 0;
+  width: 0;
+  height: 0; }
+
+.f-wrap:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+/* 슬라이더 관련 CSS Start */
+.slider, .slider2 {
+  position: relative;
+  overflow: hidden; }
+  .slider .ico-next, .slider2 .ico-next {
+    cursor: pointer;
+    right: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .ico-prev, .slider2 .ico-prev {
+    cursor: pointer;
+    left: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .swiper-pagination-bullet, .slider2 .swiper-pagination-bullet {
+    width: 0.8571428571rem;
+    height: 0.8571428571rem;
+    background: #1e457c;
+    margin: 0 0.3571428571rem !important;
+    outline: none; }
+  .slider .swiper-pagination, .slider2 .swiper-pagination {
+    position: static;
+    padding-top: 2.1428571429rem; }
+/* 슬라이더 관련 CSS End */
+
+/* 페이지 전반에 사용되는 아이콘들 */
+.ico {
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  background-size: 100%; }
+  .ico.ico-twitter {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_twitter-3fb1dc5d3ed18f2d509dda3e192bae34.png"); }
+  .ico.ico-facebook {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_facebook-ab4f6055ed3995c8c34ee8952124f7b8.png"); }
+  .ico.ico-insta {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_insta-b12c7b2eb5bfd032400a032d4047cfc9.png"); }
+  .ico.ico-youtube {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_youtube-9da84a9a6c84fcbccd6eca07d690afaf.png"); }
+  .ico.ico-more {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_more-b159ffb3fda5683a5593fbbe8b5cde85.png"); }
+  .ico.ico-next {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_next-26e5df3256448909aeeb286bd6f9e63c.png"); }
+  .ico.ico-prev {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_prev-7e46cff3654a4e6f76618a8f6beff667.png"); }
+  .ico.ico-people {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_people-4fa5afc0a613c8b39db2d429a65d4312.png"); }
+  .ico.ico-computer {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_computer-ab3fa1b849435cec39033b3c438c6192.png"); }
+  .ico.ico-more {
+    width: 2.1428571429rem;
+    height: 2.1428571429rem; }
+  .ico.ico-next, .ico.ico-prev {
+    width: 0.7142857143rem;
+    height: 1.2857142857rem;
+    background-size: 0.7142857143rem; }
+  .ico.ico-people, .ico.ico-faq, .ico.ico-computer {
+    width: 6.4285714286rem;
+    height: 6.4285714286rem; }
+
+/* 하단 배너 (D-NATION, 다이노스 월페이퍼) */
+.main-bottom-banner-wrap {display: flex; column-gap: 20px; justify-content: center;}
+.main-bottom-banner-wrap li {width: calc((100% - 40px) / 3); min-height: 170px;}
+.main-bottom-banner-wrap li a {position: relative; height: 100%; padding: 0 30px; background-color: #eef3f8; box-sizing: border-box; display: flex; flex-flow: column; row-gap: 20px; align-items: start; justify-content: center;}
+.main-bottom-banner-wrap li a strong {font-size: 22px; font-weight: 700; color: #003067;}
+.main-bottom-banner-wrap li a .txt {font-size: 14px; line-height: 1.4; color: #919190;}
+.main-bottom-banner-wrap li a .ico {position: absolute; bottom: 30px; right: 15px;}
+
+/* 경기 및 티켓 상황 (예매 가능한 경기가 있으면 표시되는 듯) */
+.ticket-swiper-wrap {height: 90px; display: flex; align-items: center; justify-content: center; background-color: #0C2444; border-bottom: 1px solid rgba(217,217,217,0.2); position: relative;}
+.ticket-swiper-wrap * {box-sizing: border-box;}
+.ticket-swiper-wrap .empty {display: flex; align-items: center; flex-flow: column; justify-content: center; row-gap: 8px;}
+.ticket-swiper-wrap .empty > p {font-size: 14px; font-weight: 700; color: #ffffff;}
+.ticket-swiper-wrap .empty > span {font-size: 12px; font-weight: 500; color: rgba(255, 255, 255, 0.7);}
+.swiper-button-disabled {opacity: 0; cursor: default;}
+
+/* 구단소식 */
+.main-notice-new {display: flex; align-items: flex-end; column-gap: 24px; justify-content: space-between;}
+.main-notice-new::after {content: none;}
+.main-notice-new .tab-board {width: calc(100% - 24px - 420px);}
+.main-notice-new .story {width: 420px;}
+
+/* '개인정보처리방침' 버튼 */
+.privacy {
+  position: absolute;
+  top: 4.3571428571rem;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
