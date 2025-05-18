@@ -204,3 +204,14 @@ img {
 
 
 .swiper-button-disabled {opacity: 0; cursor: default;}
+
+/* //Test */
+.swiper-slide {
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide:nth-child(1) { background: red; }
+.swiper-slide:nth-child(2) { background: green; }
+.swiper-slide:nth-child(3) { background: blue; }

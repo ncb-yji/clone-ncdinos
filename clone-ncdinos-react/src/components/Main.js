@@ -1,23 +1,12 @@
+// Main.js
 import NewsSlider from "./NewsSlider";
+import MainSlider from "./MainSlider";
 import '../styles/main.css'
 export default function Main() {
     return(
             <main>
         <section class="main-banner">
-            <div class="slider" style={{background : '#061d3d'}}>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" target="_blank"><img src="/images/main_banner.jpg" alt=""/></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" target="_blank"><img src="/images/main_banner_2.jpg" alt=""/></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" target="_blank"><img src="/images/main_banner_3.jpg" alt=""/></a>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+            <MainSlider />
             <div>
                 <div class="ticket-swiper-wrap">
                     <div class="empty">

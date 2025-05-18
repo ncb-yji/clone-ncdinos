@@ -1,18 +1,27 @@
-// 홈페이지 상단 메인배너 슬라이더
-function mainSlider() {
-  var main_swiper = new Swiper('.main-banner .slider', {
-    loop: false,
-    spaceBetween: 0,
-    slidesPerView: 1,
+// MainSlider.js
+import PhotoSwiper from "./PhotoSwiper";
+import '../styles/newsSlider.css'
 
-    effect: 'fade',
-    pagination: {
-      el: '.main-banner .swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 4000,
-    },
-  });
+export default function MainSlider() {
+  const slides = [
+    {img: '/images/main_banner.jpg'},
+    {img: '/images/main_banner2.jpg'},
+    {img: '/images/main_banner3.jpg'},
+  ];
+
+  return (
+    <div className="slider" style={{ background: '#061d3d' }}>
+      <PhotoSwiper
+        slides={slides}
+        loop={false}
+        spaceBetween={0}
+        slidesPerView={1}
+        effect="fade"
+        showNavigation={false}
+        pagination={{ type: 'bullets', clickable: true, }}
+        autoplay={{ delay: 4000 }}
+        speed={800}
+      />
+    </div>
+  );
 }
