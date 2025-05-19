@@ -1,4 +1,4 @@
-// import '../styles/footer.css'
+import '../styles/footer.css';
 import PartnerSlider from './PartnerSlider'
 export default function Footer() {
     return(

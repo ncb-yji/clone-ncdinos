@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/newsSlider.css';
 // Swiper React 컴포넌트
 import { Swiper, SwiperSlide } from 'swiper/react';
 // 모듈은 반드시 swiper/modules에서 가져옵니다

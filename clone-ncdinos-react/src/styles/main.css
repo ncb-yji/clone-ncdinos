@@ -1,0 +1,591 @@
+/* Main CSS Start */
+main {
+    padding-top: 9.2857142857rem;
+}
+
+main .con {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main .con .more {
+    position: absolute;
+    right: 0;
+    top: 6.4285714286rem;
+}
+
+main h2 {
+    display: inline-block;
+    color: #071d3d;
+    font-weight: 900;
+    font-size: 1.7142857143rem;
+    padding: 6.4285714286rem 0 0;
+}
+
+main h2+p {
+    display: inline-block;
+    color: rgba(7, 29, 61, 0.7);
+    font-size: 1.1428571429rem;
+    padding-left: 0.9285714286rem;
+}
+
+main .main-banner {
+    position: relative;
+    width: 100%;
+    background-size: auto 100%;
+    color: #fff;
+}
+
+main .main-banner:before {
+    content: '';
+    width: 0.0714285714rem;
+    height: 2.1428571429rem;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    bottom: -3.5001428571rem;
+    z-index: 6;
+}
+
+main .main-banner:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4.643rem;
+    width: 100%;
+    height: 4.6428571429rem;
+    background: #0c2444;
+    z-index: 5;
+}
+
+main .main-banner .slider {
+    position: relative;
+    height: 430px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main .main-banner .slider img {
+    height: 430px;
+    max-width: initial;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+main .main-banner .slider .swiper-pagination {
+    position: absolute;
+    bottom: 1.25rem;
+}
+
+main .main-banner .slider .swiper-pagination-bullet {
+    background: #fff;
+}
+
+main .main-banner .board-box {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    width: 71.4285714286rem;
+    bottom: -4.643rem;
+    z-index: 10;
+}
+
+main .main-banner .board-box>.item {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 1.8571428571rem 1.8571428571rem 1.8571428571rem 0;
+    height: 4.6428571429rem;
+    box-sizing: border-box;
+}
+
+main .main-banner .board-box>.item+.item {
+    padding: 1.8571428571rem 0 1.8571428571rem 1.8571428571rem;
+}
+
+main .main-banner .board-box [class*="txt-"] {
+    font-weight: 500;
+    float: left;
+    display: block;
+}
+
+main .main-banner .board-box .txt {
+    padding: 0 2.1428571429rem;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 1.2em;
+    display: inline-block;
+    width: 27.7142857143rem;
+    height: 1.2em;
+}
+
+main .main-banner .board-box .date {
+    font-size: 0.8571428571rem;
+    line-height: 1rem;
+    color: #ebebeb;
+    font-weight: 300;
+    float: right;
+    display: block;
+}
+
+main .news .con {
+    padding-bottom: 8.5714285714rem;
+}
+
+main .news .slider {
+    padding: 2.8571428571rem 2.4285714286rem 0;
+}
+
+main .news .gall {
+    overflow: hidden;
+}
+
+main .news .gall .swiper-slide {
+    border: 0.0714285714rem solid #c8c8c8;
+    box-sizing: border-box;
+}
+
+main .news .gall .img {
+    display: block;
+}
+
+main .news .gall .title {
+    min-height: 4.2857142857rem;
+}
+
+main .tv {
+    background: #eef3f8;
+}
+
+main .tv .con>.f-wrap {
+    padding: 3.5714285714rem 0 5.9285714286rem;
+}
+
+main .tv .video-gall {
+    float: left;
+    width: 42.1428571429rem;
+    max-width: calc(50% - 0.7142857143rem);
+}
+
+main .tv .video-gall>a {
+    display: block;
+    background: transparent;
+}
+
+main .tv .video-gall>a .img-wrap {
+    display: block;
+    width: 100%;
+    height: 19.7rem;
+    position: relative;
+    overflow: hidden;
+}
+
+main .tv .video-gall>a .ab-box {
+    position: static;
+    padding: 0;
+}
+
+main .tv .video-gall>a .ab-box .date {
+    color: #ccc;
+    font-size: 1.1428571429rem;
+}
+
+main .tv .video-gall>a .ab-box .title {
+    color: #121212;
+    font-weight: 500;
+    padding: 5px 0 1.4285714286rem;
+    font-size: 1.7142857143rem;
+}
+
+main .tv .video-gall>a.new .date:after {
+    content: 'N';
+    position: relative;
+    right: -0.3571428571rem;
+    top: 0.1428571429rem;
+    display: inline-block;
+    width: 1.1428571429rem;
+    height: 1.1428571429rem;
+    color: #fff;
+    line-height: 1.1428571429rem;
+    font-weight: 700;
+    font-size: 0.7142857143rem;
+    background: #ee2529;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 0.2857142857rem;
+}
+
+main .tv .video-gall+.gall {
+    float: right;
+    width: calc(50% - 2.1428571429rem);
+}
+
+main .tv .video-gall+.gall>div {
+    margin-bottom: 0.4285714286rem;
+}
+
+main .tv .video-gall+.gall>div .title {
+    padding-top: 1.2857142857rem;
+}
+
+main .board {
+    margin-top: 13.214rem;
+}
+
+main .board h2 {
+    padding-top: 0;
+}
+
+main .board .more {
+    top: 0;
+}
+
+main .board .tab-board {
+    position: relative;
+}
+
+main .board .tabs {
+    margin-top: 50px;
+}
+
+main .board .story {
+    position: relative;
+    background: #003067 url(https://www.ncdinos.com/assets/images/story_bg-b795abcaaeaf5173ade9b96b7f6aae03.png) no-repeat 20.7142857143rem 9.2857142857rem;
+    background-position: bottom -36px right -40px;
+    height: 305Px;
+    box-sizing: border-box;
+    padding: 60px 30px;
+    color: #888888;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .board .story:after {
+    content: '';
+    position: absolute;
+    right: 24px;
+    top: -130px;
+    width: 172Px;
+    height: 185px;
+    background: url(https://www.ncdinos.com/assets/images/sub/mascots01-661b97ff52e0f5c9453cf60640640d33.png) no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+}
+
+main .board .story p {
+    line-height: 1.4;
+    padding: 24px 0 32px;
+}
+
+main .board .story .sns-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .board .story .sns-wrap img {
+    width: 56px;
+    height: 56px;
+}
+
+main .last>.f-wrap {
+    padding: 0 0 8.5714285714rem;
+}
+
+/* Main CSS End */
+
+/* 하단 배너 (D-NATION, 다이노스 월페이퍼) */
+.main-bottom-banner-wrap {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.main-bottom-banner-wrap li {
+    width: calc((100% - 40px) / 3);
+    min-height: 170px;
+}
+
+.main-bottom-banner-wrap li a {
+    position: relative;
+    height: 100%;
+    padding: 0 30px;
+    background-color: #eef3f8;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    row-gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+.main-bottom-banner-wrap li a strong {
+    font-size: 22px;
+    font-weight: 700;
+    color: #003067;
+}
+
+.main-bottom-banner-wrap li a .txt {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #919190;
+}
+
+.main-bottom-banner-wrap li a .ico {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+}
+
+/* 구단소식 */
+.main-notice-new {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 24px;
+    justify-content: space-between;
+}
+
+.main-notice-new::after {
+    content: none;
+}
+
+.main-notice-new .tab-board {
+    width: calc(100% - 24px - 420px);
+}
+
+.main-notice-new .story {
+    width: 420px;
+}
+
+/* '구단소식' 관련 CSS Start */
+.tab-board .tabs {
+    border-bottom: 0.0714285714rem solid #dbdbdb;
+}
+
+.tab-board .tabs button {
+    display: block;
+    float: left;
+    min-width: 7.3571428571rem;
+    text-align: center;
+    line-height: 2.8571428571rem;
+    background: #f3f3f3;
+    font-size: 1.1428571429rem;
+    color: rgba(7, 29, 61, 0.49);
+    margin-bottom: -0.0714285714rem;
+    border-bottom: 0.0714285714rem solid #dbdbdb;
+    border-top: 0.0714285714rem solid transparent;
+    position: relative;
+}
+
+.tab-board .tabs button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0.0714285714rem;
+    height: 100%;
+    background: #dbdbdb;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.tab-board .tabs button:last-of-type:after {
+    display: none;
+}
+
+.tab-board .tabs button:after {
+    height: 1.1428571429rem;
+}
+
+.tab-board .tabs button.active {
+    background: #fff;
+    color: #071d3d;
+    border: 0.0714285714rem solid #c8c8c8;
+    border-bottom-color: #fff;
+    font-weight: 700;
+    margin-left: -0.0714285714rem;
+}
+
+.tab-board .tabs button.active:after {
+    display: none;
+}
+
+.tab-board .tab-container li {
+    border-bottom: 0.0714285714rem solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.tab-board .tab-container .sort {
+    font-size: 0.8571428571rem;
+    color: #1d477b;
+    line-height: 4.2857142857rem;
+    width: 46px;
+    text-align: center;
+}
+
+.tab-board .tab-container .tit {
+    color: #222;
+    font-weight: 500;
+    line-height: 1.4;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    flex: 1;
+}
+
+.tab-board .tab-container .date {
+    color: #747474;
+    font-size: 0.8571428571rem;
+    width: 62px;
+    text-align: right;
+}
+
+.tab-board .tab-container .tit.new::before {
+    content: 'N';
+    width: 1.1428571429rem;
+    height: 1.1428571429rem;
+    color: #fff;
+    line-height: 1.1428571429rem;
+    font-weight: 700;
+    font-size: 0.7142857143rem;
+    border-radius: 0.2857142857rem;
+    margin-right: 6px;
+    background: #ee2529;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-container .cont,
+.tab-container .cont2 {
+    display: none;
+}
+
+.tab-container .cont.active,
+.tab-container .cont2.active {
+    display: block;
+}
+
+/* '구단소식' 관련 CSS End */
+
+/* '다이노스 영상' 및 '다이노스 포토' 관련 CSS Start */
+.gall .img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 10.1428571429rem;
+  background: #efefef;
+  overflow: hidden; }
+  .gall .img img {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+.gall .txt {
+  display: block;
+  box-sizing: border-box;
+  padding: 1.0714285714rem 0.9285714286rem 1.7857142857rem; }
+.gall .title {
+  box-sizing: border-box;
+  height: 5.6rem;
+  overflow-y: hidden;
+  display: block;
+  line-height: 1.6;
+  font-size: 0.9285714286rem;
+  color: #222;
+  word-break: keep-all;
+  padding-bottom: 1.1428571429rem;
+  font-weight: 500; }
+.gall .date {
+  font-size: 0.8571428571rem;
+  color: #646464; }
+.gall.style2 > div {
+  margin-bottom: 1.4285714286rem; }
+  .gall.style2 > div:after {
+    content: '';
+    clear: both;
+    display: block; }
+  .gall.style2 > div:last-of-type {
+    margin-bottom: 0; }
+.gall.style2 .img {
+  float: left;
+  width: 15.7142857143rem;
+  height: 8.8rem; }
+.gall.style2 .txt {
+  float: left;
+  width: calc(100% - 15.7142857143rem);
+  padding: 0 0 0 0.7142857143rem; }
+.gall.style2 .title {
+  font-size: 1.1428571429rem;
+  padding: 0.9285714286rem 0; }
+.gall.style2 .date {
+  opacity: .4;
+  color: rgba(18, 18, 18, 0.4); }
+
+.video-gall {
+  position: relative; }
+  .video-gall .img {
+    width: 100%;
+    height: 100%;
+    background: #aaa; }
+  .video-gall .ab-box {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 3.1428571429rem 2.9285714286rem; }
+  .video-gall .title {
+    color: #fff;
+    font-size: 1.8571428571rem;
+    font-weight: 700; }
+  .video-gall .date {
+    color: rgba(215, 216, 210, 0.4);
+    font-size: 0.8571428571rem; }
+  .video-gall:after {
+    content: '';
+    position: absolute;
+    right: -1.4285714286rem;
+    top: 0;
+    width: 0.1428571429rem;
+    height: 100%;
+    background: #1d477b;
+    opacity: .15; }
+/* '다이노스 영상' 및 '다이노스 포토' 관련 CSS End */

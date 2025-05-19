@@ -1,0 +1,3 @@
+/* src/styles/swiper.css */
+/* 활성·비활성 bullet, disabled 버튼 등 */
+.swiper-button-disabled { opacity: 0; cursor: default; }

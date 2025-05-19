@@ -1,6 +1,7 @@
 // Main.js
 import NewsSlider from "./NewsSlider";
 import MainBanner from "./MainBanner";
+import '../styles/main.css';
 export default function Main() {
     return(
     <main>

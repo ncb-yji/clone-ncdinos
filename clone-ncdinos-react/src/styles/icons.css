@@ -1,0 +1,37 @@
+/* 페이지 전반에 사용되는 아이콘들 */
+.ico {
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  background-size: 100%; }
+  .ico.ico-twitter {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_twitter-3fb1dc5d3ed18f2d509dda3e192bae34.png"); }
+  .ico.ico-facebook {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_facebook-ab4f6055ed3995c8c34ee8952124f7b8.png"); }
+  .ico.ico-insta {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_insta-b12c7b2eb5bfd032400a032d4047cfc9.png"); }
+  .ico.ico-youtube {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_youtube-9da84a9a6c84fcbccd6eca07d690afaf.png"); }
+  .ico.ico-more {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_more-b159ffb3fda5683a5593fbbe8b5cde85.png"); }
+  .ico.ico-next {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_next-26e5df3256448909aeeb286bd6f9e63c.png"); }
+  .ico.ico-prev {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_prev-7e46cff3654a4e6f76618a8f6beff667.png"); }
+  .ico.ico-people {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_people-4fa5afc0a613c8b39db2d429a65d4312.png"); }
+  .ico.ico-computer {
+    background-image: url("https://www.ncdinos.com/assets/images/ico_computer-ab3fa1b849435cec39033b3c438c6192.png"); }
+  .ico.ico-more {
+    width: 2.1428571429rem;
+    height: 2.1428571429rem; }
+  .ico.ico-next, .ico.ico-prev {
+    width: 0.7142857143rem;
+    height: 1.2857142857rem;
+    background-size: 0.7142857143rem; }
+  .ico.ico-people, .ico.ico-faq, .ico.ico-computer {
+    width: 6.4285714286rem;
+    height: 6.4285714286rem; }

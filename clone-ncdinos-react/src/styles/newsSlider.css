@@ -1,0 +1,54 @@
+  main .news .con {
+    padding-bottom: 8.5714285714rem; }
+  main .news .slider {
+    padding: 2.8571428571rem 2.4285714286rem 0; }
+  main .news .gall {
+    overflow: hidden; }
+    main .news .gall .swiper-slide {
+      border: 0.0714285714rem solid #c8c8c8;
+      box-sizing: border-box; }
+    main .news .gall .img {
+      display: block; }
+    main .news .gall .title {
+      min-height: 4.2857142857rem; }
+
+/* 슬라이더 관련 CSS Start */
+.slider, .slider2 {
+  position: relative;
+  overflow: hidden; }
+  .slider .ico-next, .slider2 .ico-next {
+    cursor: pointer;
+    right: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .ico-prev, .slider2 .ico-prev {
+    cursor: pointer;
+    left: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .swiper-pagination-bullet, .slider2 .swiper-pagination-bullet {
+    width: 0.8571428571rem;
+    height: 0.8571428571rem;
+    background: #1e457c;
+    margin: 0 0.3571428571rem !important;
+    outline: none; }
+  .slider .swiper-pagination, .slider2 .swiper-pagination {
+    position: static;
+    padding-top: 2.1428571429rem; }
+/* 슬라이더 관련 CSS End */

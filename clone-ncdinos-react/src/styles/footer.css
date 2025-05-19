@@ -1,0 +1,88 @@
+/* Footer CSS Start */
+footer {
+  width: 100%;
+  background: #071d3d;
+  color: #fff; }
+  footer .partner {
+    width: 100%;
+    background: #fff;
+    padding: 0.5714285714rem 0;
+    border-top: 0.0714285714rem solid #dbdbdb; }
+    footer .partner .slider {
+      width: 71.4285714286rem;
+      margin: 0 auto;
+      overflow: hidden; }
+    footer .partner .swiper-slide {
+      display: block;
+      text-align: center; }
+  footer > .f-wrap {
+    position: relative;
+    padding: 4.3571428571rem 0 4.6428571429rem;
+    width: 71.4285714286rem;
+    margin: 0 auto; }
+  footer .f-logo {
+    float: left;
+    margin-right: 2.2142857143rem; }
+  footer .info-wrap {
+    float: left;
+    font-size: 0.7142857143rem;
+    font-weight: 700; }
+    footer .info-wrap .f-menu li {
+      display: inline-block;
+      padding: 0 .571rem 0 .286rem;
+      position: relative; }
+      footer .info-wrap .f-menu li:nth-of-type(1) {
+        padding-left: 0; }
+      footer .info-wrap .f-menu li:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.0714285714rem;
+        height: 100%;
+        background: #dbdbdb;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%); }
+      footer .info-wrap .f-menu li:last-of-type:after {
+        display: none; }
+    footer .info-wrap .copy {
+      color: rgba(255,255,255,0.5);
+      padding-top: 1.429rem;
+      font-weight: initial;}
+    footer .info-wrap .sns-wrap {
+      margin-top: 2.143rem; }
+      footer .info-wrap .sns-wrap li {
+        display: inline-block;
+        margin-right: 1.0714285714rem; }
+        footer .info-wrap .sns-wrap li span {
+          display: block;
+          width: 2.1428571429rem;
+          height: 2.1428571429rem; }
+  footer .family {
+    float: right;
+    padding-top: 2.1428571429rem; }
+    footer .family > a {
+      display: inline-block;
+      padding-left: 2.1428571429rem; }
+  footer .p-txt {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 5rem;
+    font-size: 0.7142857143rem;
+    font-weight: 200;
+    opacity: .2; }
+/* Footer CSS End */
+
+/* '개인정보처리방침' 버튼 */
+.privacy {
+  position: absolute;
+  top: 4.3571428571rem;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+}

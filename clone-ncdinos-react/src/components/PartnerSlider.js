@@ -1,5 +1,6 @@
 // src/components/PartnerSlider.js
 import React from "react";
+import '../styles/partnerSlider.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -27,6 +28,7 @@ function PartnerSlider() {
             }}
             loop
             autoplay={{ delay: 2000 }}
+            // className="news-slider"
           >
             {partners.map((p, idx) => (
               <SwiperSlide key={idx}>

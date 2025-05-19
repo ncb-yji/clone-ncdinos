@@ -1,0 +1,70 @@
+/* src/styles/partnerSlider.css */
+.partner {
+  padding: var(--gap-lg) 0;
+  background: #fafafa;
+}
+.partner h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: var(--gap-md);
+  color: var(--color-primary);
+}
+.partner .swiper-slide {
+  display: flex; justify-content: center;
+  align-items: center;
+  padding: var(--gap-sm);
+}
+.partner .swiper-slide img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.partner .swiper-button-next,
+.partner .swiper-button-prev {
+  color: var(--color-primary);
+}
+.partner .swiper-pagination-bullet {
+  background: var(--color-primary);
+}
+
+
+
+/* 슬라이더 관련 CSS Start */
+.slider, .slider2 {
+  position: relative;
+  overflow: hidden; }
+  .slider .ico-next, .slider2 .ico-next {
+    cursor: pointer;
+    right: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .ico-prev, .slider2 .ico-prev {
+    cursor: pointer;
+    left: -0.7142857143rem;
+    padding: 0.3571428571rem 0.7142857143rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    z-index: 5;
+    outline: none; }
+  .slider .swiper-pagination-bullet, .slider2 .swiper-pagination-bullet {
+    width: 0.8571428571rem;
+    height: 0.8571428571rem;
+    background: #1e457c;
+    margin: 0 0.3571428571rem !important;
+    outline: none; }
+  .slider .swiper-pagination, .slider2 .swiper-pagination {
+    position: static;
+    padding-top: 2.1428571429rem; }
+/* 슬라이더 관련 CSS End */
