@@ -1,33 +1,10 @@
 // Main.js
 import NewsSlider from "./NewsSlider";
-import MainSlider from "./MainSlider";
-import '../styles/main.css'
+import MainBanner from "./MainBanner";
 export default function Main() {
     return(
-            <main>
-        <section class="main-banner">
-            <MainSlider />
-            <div>
-                <div class="ticket-swiper-wrap">
-                    <div class="empty">
-                        <p>예매 가능한 경기 없습니다.</p>
-                        <span>다음 경기를 기대해 주세요.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="board-box f-wrap">
-                <div class="item f-wrap">
-                    <span class="txt-blue-light">공지사항</span>
-                    <a href="#" class="txt">NC 다이노스, 4월 투&middot;타 MVP 손주환, 손아섭 선정</a>
-                    <span class="date roboto">05-04</span>
-                </div>
-                <div class="item f-wrap">
-                    <span class="txt-mint">이벤트</span>
-                    <a href="#" class="txt">2025시즌 창원NC파크 전광판 기념일 광고 이벤트</a>
-                    <span class="date roboto">03-21</span>
-                </div>
-            </div>
-        </section>
+    <main>
+        <MainBanner />
         <section class="board main-board">
             <div class="con f-wrap main-notice-new">
                 <div class="tab-board">

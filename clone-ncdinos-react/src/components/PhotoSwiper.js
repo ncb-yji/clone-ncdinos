@@ -1,7 +1,11 @@
 // src/components/PhotoSwiper.js
+import React from 'react';
 import '../styles/newsSlider.css'
+// Swiper React 컴포넌트
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
+// 모듈은 반드시 swiper/modules에서 가져옵니다
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
+// Swiper 기본 스타일과 모듈별 스타일
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

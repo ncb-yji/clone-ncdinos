@@ -1,61 +1,12 @@
-import '../styles/footer.css'
+// import '../styles/footer.css'
+import PartnerSlider from './PartnerSlider'
 export default function Footer() {
     return(
         <footer class="index-header">
         <a href="#" style={{position: 'fixed', bottom: '60px', right: '60px', zIndex: '999'}}>
             <img src="https://www.ncdinos.com/assets/images/btn_won_chatbot@3x.png" style={{width: '8rem', height: '8rem'}}/>
         </a>
-        <div class="partner">
-            <div class="slider">
-                <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_01_2024.jpg" alt="NC"/>
-                    </a>
-                    <a href="https://banking.nonghyup.com/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_02.jpg" alt="NH bank"/>
-                    </a>
-                    <a href="http://www.pkpork.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_03.jpg" alt="부경양돈농협"/>
-                    </a>
-                    <a href="http://brand.pkpork.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_04.jpg" alt="포크밸리"/>
-                    </a>
-                    <a href="https://www.hitejinro.com/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_16.jpg" alt="켈리"/>
-                    </a>
-                    <a href="https://www.knbank.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_06.jpg" alt="BNK 경남은행"/>
-                    </a>
-                    <a href="https://www.abllife.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_07.jpg" alt="ABL"/>
-                    </a>
-                    <a href="https://www.muhak.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_14.jpg" alt="무학"/>
-                    </a>
-                    <a href="https://www.tving.com/onboarding" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/png/partner_tving.png" alt="티빙"/>
-                    </a>
-                    <a href="https://www.tongyeong.go.kr/main.web" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/png/partner_tongyeong.png" alt="통영시"/>
-                    </a>
-                    <a href="https://smartstore.naver.com/busanmilk" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/png/partner_busanMilk.png" alt="부산우유"/>
-                    </a>
-                    <a href="http://www.camc.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_11.jpg" alt="청아병원"/>
-                    </a>
-                    <a href="http://www.muruphospital.com/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/jpg/img_footerlogo_13.jpg" alt="무룹병원"/>
-                    </a>
-                    <a href="https://www.hahahospital.co.kr/" class="swiper-slide" target="_blank">
-                        <img src="https://www.ncdinos.com/partner/png/partner_haha.png" alt="365하하병원"/>
-                    </a>
-                </div>
-                {/* Add Arrows */}
-                <div class="ico ico-next"></div>
-                <div class="ico ico-prev"></div>
-            </div>
-        </div>
+        <PartnerSlider />
         <div class="f-wrap">
             <h1 class="f-logo"><img src="https://www.ncdinos.com/assets/images/f_logo.png" alt="nc dinos"/></h1>
             <div class="privacy"><a href="#" style={{fontSize: '1.1em'}}>개인정보처리방침</a></div>
