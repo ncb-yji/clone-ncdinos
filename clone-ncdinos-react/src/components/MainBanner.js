@@ -1,8 +1,8 @@
+// components/MainBanner.js
 import React from 'react';
 import MainSlider from "./MainSlider";
 import '../styles/mainBanner.css'
 
-// '다이노스 포토'란 슬라이더
 export default function MainBanner() {
     return (
         <section className="main-banner">

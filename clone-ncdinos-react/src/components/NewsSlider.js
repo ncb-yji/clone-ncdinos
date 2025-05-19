@@ -1,10 +1,9 @@
+// components/NewsSlider.js
 import React from 'react';
 import '../styles/newsSlider.css';
 // Swiper React 컴포넌트
 import { Swiper, SwiperSlide } from 'swiper/react';
-// 모듈은 반드시 swiper/modules에서 가져옵니다
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
-// Swiper 기본 스타일과 모듈별 스타일
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -20,19 +19,18 @@ export default function NewsSlider() {
         <a href="#" class="more"><span class="ico ico-more">더보기</span></a>
         <div class="slider">
           {/* navigation className */}
-          <div className="ico ico-next"></div>
-          <div className="ico ico-prev"></div>
+          <div className=".news ico ico-next"></div>
+          <div className=".news ico ico-prev"></div>
           <div class="gall">
             <Swiper
-              // 사용하려는 모듈 등록
               modules={[Navigation, Pagination, Autoplay, EffectFade]}
               loop={false}
               slidesPerView={4}
               spaceBetween={10}
               slidesPerGroup={1}
               navigation={{
-                prevEl: ".ico.ico-prev",
-                nextEl: ".ico.ico-next"
+                prevEl: ".news .ico.ico-prev",
+                nextEl: ".news .ico.ico-next"
               }}
               pagination={{ type: 'bullets', clickable: true }}
               autoplay={{ delay: 4000 }}

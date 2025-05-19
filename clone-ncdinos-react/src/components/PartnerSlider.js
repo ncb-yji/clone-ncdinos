@@ -1,4 +1,4 @@
-// src/components/PartnerSlider.js
+// components/PartnerSlider.js
 import React from "react";
 import '../styles/partnerSlider.css';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,8 +13,8 @@ function PartnerSlider() {
     <section className="partner">
       <div class="slider">
         {/* navigation className */}
-        <div className="ico ico-next"></div>
-        <div className="ico ico-prev"></div>
+        <div className=".partner ico ico-next"></div>
+        <div className=".partner ico ico-prev"></div>
         <div class="swiper-wrapper">
 
           <Swiper
@@ -23,12 +23,12 @@ function PartnerSlider() {
             slidesPerView={5}
             slidesPerGroup={1}
             navigation={{
-              prevEl: ".ico.ico-prev",
-              nextEl: ".ico.ico-next"
+              prevEl: ".partner .ico.ico-prev",
+              nextEl: ".partner .ico.ico-next"
             }}
             loop
             autoplay={{ delay: 2000 }}
-            // className="news-slider"
+            className="partner-slider"
           >
             {partners.map((p, idx) => (
               <SwiperSlide key={idx}>
